@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "59241962873",
+    "project_id": "nuunofn",
+    "storage_bucket": "nuunofn.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:59241962873:android:4336970957cf81ab71e3a8",
+        "android_client_info": {
+          "package_name": "luisser.fonbet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "59241962873-3mlol6uj7umf4cnup8hcpvgmahvqboa2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0cZYu2OQWoLNZCzfu6Bgd2KumRHNwMxg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "59241962873-3mlol6uj7umf4cnup8hcpvgmahvqboa2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
