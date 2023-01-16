@@ -49,12 +49,6 @@ public class BalanceHandler : MonoBehaviour
         }
     }
 
-    public void PawnThingsOnBtnClick()
-    {
-        Sum += 50;
-        SaveSum();
-    }
-
     private void OnStartGame()
     {
         Sum -= 50;
@@ -63,7 +57,15 @@ public class BalanceHandler : MonoBehaviour
 
     private void GetSum()
     {
-        Sum = PlayerPrefs.GetInt("Balance");
+        if(PlayerPrefs.HasKey("Balance"))
+        {
+            Sum = PlayerPrefs.GetInt("Balance");
+        }
+        else
+        {
+            Sum = 500;
+            PlayerPrefs.SetInt("Balance", Sum);
+        }
     }
 
     private void SaveSum()
@@ -74,6 +76,6 @@ public class BalanceHandler : MonoBehaviour
 
     private void SetSumText()
     {
-        _sumText.SetText("Your balance: " + PlayerPrefs.GetInt("Balance"));
+        _sumText.SetText("Coins: " + PlayerPrefs.GetInt("Balance"));
     }
 }
